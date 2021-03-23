@@ -16,10 +16,11 @@ while True :
     inputan = int(input("Pilih menu :"))
     if inputan == 1:
         print("Daftar Kontak : ")
-        for i in nama :
-            print(f"Nama : {i}, No.telp : {i2}")
-        for i2 in telepon:
-            print(f"No. Telepon : {i2}")
+        for hasil_data in range(len(nama)):
+            print("------------------------------")
+            print(hasil_data+1)
+            print("Nama        : {}".format(nama[hasil_data]))
+            print("No. Telepon : {}".format(telepon[hasil_data]))
     elif inputan ==2:
         nama_telepon()
     elif inputan ==3:
