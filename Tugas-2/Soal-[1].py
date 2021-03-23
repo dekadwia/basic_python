@@ -6,7 +6,7 @@ def nama_telepon():
     input_telepon = int(input("No. Telepon :"))
     nama.append(input_nama)
     telepon.append(input_telepon)
-    print("Kontak Berhasil ditambahkan!")
+    print("Kontak berhasil ditambahkan")
 while True : 
     print('Selamat datang!')
     print('--- Menu---')
