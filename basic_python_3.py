@@ -102,10 +102,37 @@ for i in range(2):
     for j in range(3):
         print("i:{},j:{}".format(i,j), end = " ") #fungsi end akan membuat 1 row saja
     print() # Membuat menjadi 2 row
- #Nested Loop   
-nama =["a","b","c"]
-
-for i in range(3) :
-    for i2 in nama :
-     print(i2)
     
+for i in range(11):
+    for i2 in range(i):
+        print("*", end = " ")
+    print()
+
+for i in range(11):
+    for i2 in range(i):
+        print(i2, end = " ")
+    print()
+    
+for i in range(11):
+    for i2 in range(i):
+        print(i, end = " ")
+    print()
+    
+name = ["Ismail", "Ali", "Elif"]
+car = ["Mercedes","Porsche", "Hyundai"]
+number = (1,2,3)
+for names in name :
+    for cars in car :
+        for numbers in number :
+            print(f"{names} has {numbers} of{cars}")
+
+#Try
+try :
+    angka = int(input("Masukkan Angka :"))
+    print(angka)
+except ValueError:
+    print("yang anda masukkan bukan angka!")
+else :
+    print("Program Sukses!")
+finally :
+    print("Program Selesai")
